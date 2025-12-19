@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dl0dsx7a3ewf0"]
+
+[ext_resource type="Script" uid="uid://dvshimbb0a23c" path="res://scripts/core/nodes/level.gd" id="1_ephxx"]
+[ext_resource type="PackedScene" uid="uid://6kv6le0cilrx" path="res://scenes/entities/player/player.tscn" id="2_l8odw"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_l8odw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aesaw"]
+size = Vector2(164, 40)
+
+[node name="DebugLevel" type="Node2D"]
+script = ExtResource("1_ephxx")
+metadata/_custom_type_script = "uid://dvshimbb0a23c"
+
+[node name="Platform" type="StaticBody2D" parent="."]
+position = Vector2(0, 160)
+
+[node name="PlatformShape" type="TextureRect" parent="Platform"]
+offset_right = 164.0
+offset_bottom = 40.0
+texture = SubResource("CanvasTexture_l8odw")
+metadata/_edit_lock_ = true
+
+[node name="Collision" type="CollisionShape2D" parent="Platform"]
+position = Vector2(82, 20)
+shape = SubResource("RectangleShape2D_aesaw")
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." instance=ExtResource("2_l8odw")]
+position = Vector2(28, 150)
