@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 BgmPlayer="*res://autoloads/bgm_player.tscn"
+DialogueManager="*res://scripts/core/managers/dialogue_manager.gd"
 
 [display]
 

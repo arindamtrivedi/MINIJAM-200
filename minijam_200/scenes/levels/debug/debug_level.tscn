@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dl0dsx7a3ewf0"]
 
-[ext_resource type="Script" uid="uid://dvshimbb0a23c" path="res://scripts/core/nodes/level.gd" id="1_ephxx"]
+[ext_resource type="Script" uid="uid://ndkr5uetk4ri" path="res://scripts/scenes/levels/debug/debug_level.gd" id="1_l8odw"]
 [ext_resource type="PackedScene" uid="uid://6kv6le0cilrx" path="res://scenes/entities/player/player.tscn" id="2_l8odw"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_l8odw"]
@@ -9,7 +9,7 @@
 size = Vector2(164, 40)
 
 [node name="DebugLevel" type="Node2D"]
-script = ExtResource("1_ephxx")
+script = ExtResource("1_l8odw")
 metadata/_custom_type_script = "uid://dvshimbb0a23c"
 
 [node name="Platform" type="StaticBody2D" parent="."]

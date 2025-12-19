@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://5tj3rm660eyv"]
+
+[ext_resource type="Script" uid="uid://dbj05cyeai6gd" path="res://scripts/resources/dialogue_content.gd" id="1_d7qql"]
+[ext_resource type="Texture2D" uid="uid://cfu52s6l21tse" path="res://icon.svg" id="2_cioej"]
+[ext_resource type="Script" uid="uid://ccq3dfuwytxdx" path="res://scripts/resources/dialogue_data.gd" id="2_lwhwq"]
+
+[sub_resource type="Resource" id="Resource_6jnls"]
+script = ExtResource("1_d7qql")
+name = ""
+face = ExtResource("2_cioej")
+text = "Hello !"
+metadata/_custom_type_script = "uid://dbj05cyeai6gd"
+
+[sub_resource type="Resource" id="Resource_53bhl"]
+script = ExtResource("1_d7qql")
+name = "Test"
+face = ExtResource("2_cioej")
+text = "This is a debug dialogue."
+metadata/_custom_type_script = "uid://dbj05cyeai6gd"
+
+[resource]
+script = ExtResource("2_lwhwq")
+lines = Array[ExtResource("1_d7qql")]([SubResource("Resource_6jnls"), SubResource("Resource_53bhl")])
+metadata/_custom_type_script = "uid://ccq3dfuwytxdx"
