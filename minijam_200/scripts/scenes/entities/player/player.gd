@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 
 @export var state_label: Label
+@export var sprite: AnimatedSprite2D
 
 const SPEED: float = 100.0
 const GRAVITY: float = 20.0

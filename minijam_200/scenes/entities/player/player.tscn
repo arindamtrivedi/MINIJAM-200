@@ -14,7 +14,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_bj7e2")
 }],
-"loop": false,
+"loop": true,
 "name": &"move_left",
 "speed": 5.0
 }, {
@@ -22,7 +22,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_1murt")
 }],
-"loop": false,
+"loop": true,
 "name": &"move_right",
 "speed": 5.0
 }]
@@ -30,14 +30,15 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjvvg"]
 size = Vector2(36, 64)
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("state_label")]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("state_label", "sprite")]
 script = ExtResource("1_58kc7")
 state_label = NodePath("StateLabel")
+sprite = NodePath("Sprite")
 metadata/_custom_type_script = "uid://duebhsq1gx1uq"
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5sj0x")
-animation = &"move_right"
+animation = &"move_left"
 autoplay = "move_right"
 
 [node name="StateLabel" type="Label" parent="."]

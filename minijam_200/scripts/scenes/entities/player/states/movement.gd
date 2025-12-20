@@ -14,6 +14,12 @@ func exit() -> void:
 
 
 func physics_update(_delta: float) -> void:
+	# ANIMATIONS
+	if player.velocity.x < 0:
+		player.sprite.play("move_left")
+	elif player.velocity.x > 0:
+		player.sprite.play("move_right")
+	
 	if !player.is_on_floor():
 		transitioned.emit(self, "jump")
 	if player.velocity == Vector2.ZERO:
