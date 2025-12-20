@@ -76,6 +76,7 @@ offset_right = 72.0
 offset_bottom = 72.0
 texture = ExtResource("2_bm251")
 expand_mode = 1
+stretch_mode = 5
 
 [node name="TextLabel" type="RichTextLabel" parent="TextPanel"]
 layout_mode = 0
