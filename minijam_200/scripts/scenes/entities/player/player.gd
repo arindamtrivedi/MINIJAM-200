@@ -5,9 +5,9 @@ extends CharacterBody2D
 @export var state_label: Label
 @export var sprite: AnimatedSprite2D
 
-const SPEED: float = 100.0
+const SPEED: float = 200.0
 const GRAVITY: float = 20.0
-const JUMP_VELOCITY: float = -200.0
+const JUMP_VELOCITY: float = -400.0
 
 func _physics_process(delta: float) -> void:
 	if !is_on_floor():
