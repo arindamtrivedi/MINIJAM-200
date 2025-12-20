@@ -1,33 +1,50 @@
-[gd_scene load_steps=8 format=3 uid="uid://6kv6le0cilrx"]
+[gd_scene load_steps=10 format=3 uid="uid://6kv6le0cilrx"]
 
 [ext_resource type="Script" uid="uid://duebhsq1gx1uq" path="res://scripts/scenes/entities/player/player.gd" id="1_58kc7"]
+[ext_resource type="Texture2D" uid="uid://castc5dmy00j" path="res://assets/sprites/entities/player/player_move_left.png" id="2_bj7e2"]
 [ext_resource type="Script" uid="uid://yptt058ob6in" path="res://scripts/core/gamestate/state_machine.gd" id="2_nh4ur"]
+[ext_resource type="Texture2D" uid="uid://bnkjmeoc3aod2" path="res://assets/sprites/entities/player/player_move_right.png" id="3_1murt"]
 [ext_resource type="Script" uid="uid://kkhajs5nvlla" path="res://scripts/scenes/entities/player/states/idle.gd" id="3_nh4ur"]
 [ext_resource type="Script" uid="uid://bcijhx6uc5s7k" path="res://scripts/scenes/entities/player/states/movement.gd" id="4_bjvvg"]
 [ext_resource type="Script" uid="uid://brm01i4p2ylyr" path="res://scripts/scenes/entities/player/states/jump.gd" id="5_bjvvg"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_nh4ur"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_5sj0x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bj7e2")
+}],
+"loop": false,
+"name": &"move_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1murt")
+}],
+"loop": false,
+"name": &"move_right",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjvvg"]
-size = Vector2(10, 20)
+size = Vector2(36, 64)
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("state_label")]
 script = ExtResource("1_58kc7")
 state_label = NodePath("StateLabel")
 metadata/_custom_type_script = "uid://duebhsq1gx1uq"
 
-[node name="Shape" type="TextureRect" parent="."]
-offset_left = -5.0
-offset_top = -10.0
-offset_right = 5.0
-offset_bottom = 10.0
-texture = SubResource("CanvasTexture_nh4ur")
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5sj0x")
+animation = &"move_right"
+autoplay = "move_right"
 
 [node name="StateLabel" type="Label" parent="."]
 offset_left = -64.0
-offset_top = -32.0
+offset_top = -52.0
 offset_right = 64.0
-offset_bottom = -9.0
+offset_bottom = -29.0
 text = "idle"
 horizontal_alignment = 1
 vertical_alignment = 1
