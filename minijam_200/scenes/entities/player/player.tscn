@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://6kv6le0cilrx"]
 
 [ext_resource type="Script" uid="uid://duebhsq1gx1uq" path="res://scripts/scenes/entities/player/player.gd" id="1_58kc7"]
-[ext_resource type="Texture2D" uid="uid://castc5dmy00j" path="res://assets/sprites/entities/player/player_move_left.png" id="2_bj7e2"]
+[ext_resource type="Texture2D" uid="uid://7ig7ig2uo7p2" path="res://assets/sprites/entities/player/player_move_left.png" id="2_bj7e2"]
 [ext_resource type="Script" uid="uid://yptt058ob6in" path="res://scripts/core/gamestate/state_machine.gd" id="2_nh4ur"]
 [ext_resource type="Texture2D" uid="uid://bnkjmeoc3aod2" path="res://assets/sprites/entities/player/player_move_right.png" id="3_1murt"]
 [ext_resource type="Script" uid="uid://kkhajs5nvlla" path="res://scripts/scenes/entities/player/states/idle.gd" id="3_nh4ur"]
@@ -28,7 +28,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bjvvg"]
-size = Vector2(36, 64)
+size = Vector2(32, 64)
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("state_label", "sprite")]
 script = ExtResource("1_58kc7")
