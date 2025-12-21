@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dl0dsx7a3ewf0"]
+[gd_scene load_steps=6 format=3 uid="uid://dl0dsx7a3ewf0"]
 
 [ext_resource type="Script" uid="uid://ndkr5uetk4ri" path="res://scripts/scenes/levels/debug/debug_level.gd" id="1_l8odw"]
 [ext_resource type="PackedScene" uid="uid://6kv6le0cilrx" path="res://scenes/entities/player/player.tscn" id="2_l8odw"]
+[ext_resource type="PackedScene" uid="uid://bv8u0aoysvs7" path="res://scenes/entities/npcs/debug/debug_npc.tscn" id="3_aesaw"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_l8odw"]
 
@@ -24,6 +25,9 @@ texture = SubResource("CanvasTexture_l8odw")
 position = Vector2(151, 20)
 shape = SubResource("RectangleShape2D_aesaw")
 metadata/_edit_lock_ = true
+
+[node name="DebugNpc" parent="." instance=ExtResource("3_aesaw")]
+position = Vector2(247, 288)
 
 [node name="Player" parent="." instance=ExtResource("2_l8odw")]
 position = Vector2(32, 288)
