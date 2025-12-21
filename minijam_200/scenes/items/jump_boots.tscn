@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://y6stwjm3cka7"]
+[gd_scene load_steps=4 format=3 uid="uid://y6stwjm3cka7"]
 
+[ext_resource type="Script" uid="uid://dawvbmx225an5" path="res://scripts/scenes/items/jump_boots.gd" id="1_isq2m"]
 [ext_resource type="Texture2D" uid="uid://cfu52s6l21tse" path="res://icon.svg" id="1_xj38e"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tlvjm"]
 radius = 11.0
 
 [node name="JUMP BOOTS" type="Area2D"]
+script = ExtResource("1_isq2m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_tlvjm")

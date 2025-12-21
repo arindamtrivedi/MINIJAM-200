@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://by3u0stw8waot"]
+[gd_scene load_steps=5 format=3 uid="uid://by3u0stw8waot"]
 
 [ext_resource type="PackedScene" uid="uid://6kv6le0cilrx" path="res://scenes/entities/player/player.tscn" id="1_uxt5y"]
 [ext_resource type="PackedScene" uid="uid://6celhb6a6y0h" path="res://scenes/entities/pad/pad.tscn" id="2_dcudt"]
 [ext_resource type="PackedScene" uid="uid://y6stwjm3cka7" path="res://scenes/items/jump_boots.tscn" id="3_tlvjm"]
-[ext_resource type="Script" uid="uid://dawvbmx225an5" path="res://scenes/items/jump_boots.gd" id="4_dvghh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxt5y"]
 size = Vector2(626, 20)
@@ -27,6 +26,5 @@ collision_mask = 1
 
 [node name="JUMP BOOTS" parent="." instance=ExtResource("3_tlvjm")]
 position = Vector2(118, 266)
-script = ExtResource("4_dvghh")
 
 [connection signal="body_entered" from="JUMP BOOTS" to="JUMP BOOTS" method="_on_body_entered"]
