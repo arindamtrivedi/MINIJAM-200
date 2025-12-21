@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dcdmt4cq53pc4"]
 
-[ext_resource type="Script" uid="uid://dd6b62tn6leh0" path="res://scripts/scenes/gui/menus/dialogue_box.gd" id="1_hqrs7"]
+[ext_resource type="Script" uid="uid://dd6b62tn6leh0" path="res://scripts/scenes/entities/player/gui/menus/dialogue_box.gd" id="1_hqrs7"]
 [ext_resource type="Texture2D" uid="uid://cfu52s6l21tse" path="res://icon.svg" id="2_bm251"]
 
 [sub_resource type="Animation" id="Animation_lhsxw"]

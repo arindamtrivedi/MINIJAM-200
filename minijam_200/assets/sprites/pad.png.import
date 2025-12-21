@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://castc5dmy00j"
-path="res://.godot/imported/player_move_left.png-87caba50e84bcb94ec405e2bc8800d5c.ctex"
+uid="uid://bgwlao0fqfhvq"
+path="res://.godot/imported/pad.png-1eca26e35a9b53730056f1ce42a860bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/entities/player/player_move_left.png"
-dest_files=["res://.godot/imported/player_move_left.png-87caba50e84bcb94ec405e2bc8800d5c.ctex"]
+source_file="res://assets/sprites/pad.png"
+dest_files=["res://.godot/imported/pad.png-1eca26e35a9b53730056f1ce42a860bb.ctex"]
 
 [params]
 
